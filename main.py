@@ -40,6 +40,8 @@ class LinkedList:
         "function to print all values in the linked_list"
         # making a copy
         head = self.head
+        if not head:
+            return "*Linked List is Empty*"
         words = []
         # looping through nodes and printing values
         while(head):
@@ -71,7 +73,9 @@ linked_list.add_to_end("To")
 linked_list.add_to_end("Write")
 linked_list.add_to_end("Code")
 
+print("ORIGINAL")
 print(linked_list)
 
+print("REVERSED")
 reversed_list = linked_list.reverse_list()
 print(reversed_list)
